@@ -313,7 +313,7 @@ return (
             </div>
 
           <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center shadow-[0_0_20px_black] rounded-[15px] p-10  mb-20  ">
-                <h3>Enter Last Semester Result credits</h3>
+                <h3 className='text-[30px]'>Enter Last Semester Result credits</h3>
                
                <input type="number" 
                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
@@ -338,7 +338,7 @@ return (
                 value={Resultcreditsvalue4} 
                 onChange={(e)=>setResultcreditsvalue4(e.target.value)}
                 />
-
+                <br />
                 <input type="number" 
                 className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
                 value={Resultcreditsvalue5} 
