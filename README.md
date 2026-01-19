@@ -1,18 +1,29 @@
-# React + Vite
+# GPA Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **GPA Calculator** built with **React** and **Tailwind CSS**. This app allows students to calculate their Grade Point Average (GPA) based on course grades and credit hours.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+- Add multiple courses with course name, credit hours, and grade.
+- Calculate GPA automatically based on grades and credits.
+- Fully responsive design using **Tailwind CSS**.
+- User-friendly interface for easy input and instant results.
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## 📦 Tech Stack
 
-## Expanding the ESLint configuration
+- **React** – For building the interactive UI.
+- **Tailwind CSS** – For styling and responsive design.
+- **JavaScript** – Core logic for GPA calculation.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/gpa-calculator.git
+   cd gpa-calculator
