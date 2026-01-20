@@ -162,15 +162,15 @@ function  Reaset () {
 
 return (
     <>
-        <div className="bg-[linear-gradient(100deg,rgb(7,20,65)_0%,rgb(7,25,92)_50%)] text-white p-5 overflow-hidden" >
+    <div className="bg-[linear-gradient(100deg,rgb(7,20,65)_0%,rgb(7,25,92)_50%)] text-white p-5 overflow-hidden" >
     
         <header className='text-center text-[25px] mb-5'>
             <h1>GPA CALCULATOR</h1>
         </header>
 
-        <div className='flex' >
+        <div className='items-center justify-center text-center ' >
 
-        <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center flex shadow-[0_0_20px_black] rounded-[15px] p-4  mb-10 mr-10">
+            <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center flex shadow-[0_0_20px_black] rounded-[15px] p-4 mb-10 mr-10 ml-10">
             <div  > 
                 <h3 className=' text-[25px] text-center'>Enter credit hours</h3>
 
@@ -194,7 +194,7 @@ return (
                  value={value3} 
                 onChange={(e) => setvalue3(e.target.value)} 
                 />
-
+                <br />
                 <input type="number" 
                 className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5'
                 value={value4} 
@@ -208,15 +208,15 @@ return (
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5 mt-3'
+                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5 mt-3 mb-5'
                 value={value6} 
                 onChange={(e) => setvalue6(e.target.value)}  
                 />
 
             </div>
-        </div>
+            </div>
 
-         <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center flex shadow-[0_0_20px_black] rounded-[15px] p-4  mb-10 " >
+            <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center flex shadow-[0_0_20px_black] rounded-[15px] p-4 mb-10 mr-10 ml-10 " >
             <div className="">
                 <h3 className=' text-[25px] text-center'>Enter Grades Points</h3>
 
@@ -237,7 +237,7 @@ return (
                 value={GradesPointsvalue3} 
                 onChange={(e)=>GradesPointssetvalue3(e.target.value)}
                 />
-
+                <br />
                 <input type="number" 
                 className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5 mt-3 cursor-pointer'
                 value={GradesPointsvalue4} 
@@ -257,10 +257,11 @@ return (
                 />
 
             </div>
-         </div>
-         </div>
+           
+            </div>
+        </div>
 
-         <div className="p-10 ">
+           <div className="p-10 ">
              <div className=" bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center shadow-[0_0_20px_black] rounded-[15px] p-10  mb-20  ">
                 <h3 className=' text-[35px] text-center'>Enter Last Semester Result </h3>
                 <input type="number" 
@@ -369,13 +370,12 @@ return (
 
              <div className='text-center mt-10'>
                 <button onClick={Calculate} 
-                className='bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] text-center text-[30px] mr-20 
-                border-1 border-cyan-400 rounded-[10px] cursor-pointer p-5 w-[300px]'> 
+                className='bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] text-center text-[30px] mr-20 mb-10 hover:border-white border-1 border-cyan-400 rounded-[10px] cursor-pointer p-5 w-[300px]'> 
                 Calculate
                 </button>
             
                 <button onClick={Reaset}    
-                className='bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] text-center text-[30px] cursor-pointer p-5 border-1 border-cyan-400 rounded-[10px] w-[300px]'>
+                className='bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] text-center text-[30px] cursor-pointer hover:border-white p-5 border-1 border-cyan-400 rounded-[10px] w-[300px]'>
                 Reseat
                 </button> 
             </div>   
