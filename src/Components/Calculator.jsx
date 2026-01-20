@@ -162,53 +162,61 @@ function  Reaset () {
 
 return (
     <>
-    <div className="bg-[linear-gradient(100deg,rgb(7,20,65)_0%,rgb(7,25,92)_50%)] text-white p-5 overflow-hidden" >
+    <div className="bg-[linear-gradient(100deg,rgb(7,20,65)_0%,rgb(7,25,92)_50%)] text-white p-5 overflow-hidden " >
     
-        <header className='text-center text-[25px] mb-5'>
-            <h1>GPA CALCULATOR</h1>
-        </header>
+        <div className='flex items-center justify-center text-center'>
+            <header className='text-center text-[25px] mb-5 bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] shadow-[0_0_20px_black] rounded-[20px] p-4 w-[300px] '>
+                <h1>GPA CALCULATOR</h1>
+            </header>
+        </div>
 
         <div className='items-center justify-center text-center ' >
 
-            <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center flex shadow-[0_0_20px_black] rounded-[15px] p-4 mb-10 mr-10 ml-10">
+            <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center flex shadow-[0_0_20px_black] rounded-[15px] p-4 mb-15 mr-5 ml-5 ">
             <div  > 
-                <h3 className=' text-[25px] text-center'>Enter credit hours</h3>
+                <h3 className='mt-5 mb-4 text-[25px] text-center sm:text-10 '>Enter credit hours:</h3>
 
                 <input 
                 
-                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 border-1 border-cyan-400 rounded-[10px] w-[150px] mr-5 mb-2 mt-3'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 type="number" 
                 value={value1} 
                 onChange={(e) => setvalue1(e.target.value)} 
                 />
 
                 <input 
-                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 type="number" 
                 value={value2} 
                 onChange={(e) => setvalue2(e.target.value)} 
                 />
 
                 <input type="number"
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400 rounded-[10px] w-[150px] mr-5'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                  value={value3} 
                 onChange={(e) => setvalue3(e.target.value)} 
                 />
                 <br />
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={value4} 
                 onChange={(e) => setvalue4(e.target.value)} 
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5 '
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={value5} 
                 onChange={(e) => setvalue5(e.target.value)} 
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5 mt-3 mb-5'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={value6} 
                 onChange={(e) => setvalue6(e.target.value)}  
                 />
@@ -216,42 +224,48 @@ return (
             </div>
             </div>
 
-            <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center flex shadow-[0_0_20px_black] rounded-[15px] p-4 mb-10 mr-10 ml-10 " >
-            <div className="">
-                <h3 className=' text-[25px] text-center'>Enter Grades Points</h3>
+            <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center flex shadow-[0_0_20px_black] rounded-[15px] p-4 mb-15 mr-5 ml-5 " >
+            <div className=" mt-5 mb-5  ">
+                <h3 className='mb-4 text-[25px] text-center'>Enter Grades Points</h3>
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400 rounded-[10px] w-[150px] mr-5 mt-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={GradesPointsvalue1} 
                 onChange={(e) => GradesPointssetvalue1(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5 mt-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={GradesPointsvalue2} 
                 onChange={(e)=>GradesPointssetvalue2(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5 mt-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={GradesPointsvalue3} 
                 onChange={(e)=>GradesPointssetvalue3(e.target.value)}
                 />
                 <br />
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400  rounded-[10px] w-[150px] mr-5 mt-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={GradesPointsvalue4} 
                 onChange={(e)=>GradesPointssetvalue4(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400 rounded-[10px] w-[150px] mr-5 mt-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={GradesPointsvalue5} 
                 onChange={(e)=>GradesPointssetvalue5(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px]outline-none p-2 border-1 border-cyan-400 rounded-[10px] w-[150px] mr-5 mt-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-5 ml-5 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={GradesPointsvalue6} 
                 onChange={(e)=>GradesPointssetvalue6(e.target.value)}
                 />
@@ -261,127 +275,147 @@ return (
             </div>
         </div>
 
-           <div className="p-10 ">
-             <div className=" bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center shadow-[0_0_20px_black] rounded-[15px] p-10  mb-20  ">
-                <h3 className=' text-[35px] text-center'>Enter Last Semester Result </h3>
+           <div className=" ">
+             <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center shadow-[0_0_20px_black] rounded-[15px] p-4 mb-20 mr-5 ml-5 ">
+                <h3 className='mt-3 mb-3 text-[25px] text-center'>Enter Last Semester Result:</h3>
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={SemesterResultvalue1} 
                 onChange={(e)=>setSemesterResultvalue1(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={SemesterResultvalue2} 
                 onChange={(e)=>setSemesterResultvalue2(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={SemesterResultvalue3} 
                 onChange={(e)=>setSemesterResultvalue3(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={SemesterResultvalue4} 
                 onChange={(e)=>setSemesterResultvalue4(e.target.value)}
                 />
                 <br />
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={SemesterResultvalue5} 
                 onChange={(e)=>setSemesterResultvalue5(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={SemesterResultvalue6} 
                 onChange={(e)=>setSemesterResultvalue6(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-10 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400 '
                 value={SemesterResultvalue7} 
                 onChange={(e)=>setSemesterResultvalue7(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={SemesterResultvalue8} 
                 onChange={(e)=>setSemesterResultvalue8(e.target.value)}
                 />
             </div>
 
-          <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center shadow-[0_0_20px_black] rounded-[15px] p-10  mb-20  ">
-                <h3 className='text-[30px]'>Enter Last Semester Result credits</h3>
+          <div className="bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] justify-center items-center text-center shadow-[0_0_20px_black] rounded-[15px] p-5  mb-20  m-5">
+                <h3 className='text-[30px]'>
+                    Enter Last Semester Result Credits:
+                    </h3>
                
                <input type="number" 
-               className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+               className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-1 ml-2 mb-2 mt-3 cursor-pointer hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={Resultcreditsvalue1} 
                 onChange={(e)=>setResultcreditsvalue1(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={Resultcreditsvalue2} 
                 onChange={(e)=>setResultcreditsvalue2(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={Resultcreditsvalue3} 
                 onChange={(e)=>setResultcreditsvalue3(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={Resultcreditsvalue4} 
                 onChange={(e)=>setResultcreditsvalue4(e.target.value)}
                 />
                 <br />
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={Resultcreditsvalue5} 
                 onChange={(e)=>setResultcreditsvalue5(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={Resultcreditsvalue6} 
                 onChange={(e)=>setResultcreditsvalue6(e.target.value)}
                 />
                 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-2 mt-3 cursor-pointer hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={Resultcreditsvalue7} 
                 onChange={(e)=>setResultcreditsvalue7(e.target.value)}
                 />
 
                 <input type="number" 
-                className='shadow-[0_0_20px_black] rounded-[10px] p-3 border-1 border-cyan-400 rounded-[10px] w-[210px] mr-5 mt-3 mb-3 cursor-pointer'
+                className='shadow-[0_0_20px_black] rounded-[10px] outline-none p-2 text-[20px] border-2 border-cyan-400 rounded-[10px] w-[190px] pl-4 pt-2 pb-2 mr-2 ml-2 mb-10 mt-3 cursor-pointer
+                hover:scale-[1.1] hover:border-[white] hover-border-2 transition-transform duration-400'
                 value={Resultcreditsvalue8} 
                 onChange={(e)=>setResultcreditsvalue8(e.target.value)}
                 />
             </div>
 
-            <p className='text-center text-[30px] tracking-[2px]'>Your GPA = {GetGpa.toFixed(2)}</p>
-            <p className='text-center text-[30px] tracking-[2px]'>Your CGPA ={Getcgpa.toFixed(2)}</p>
+            <div className='flex text-center justify-center items-center'>
 
-             <div className='text-center mt-10'>
+            <div className='bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] text-2xl shadow-[0_0_20px_black] rounded-[15px] text-center justify-center items-center flex flex-col m-5 w-[300px] p-5'>
+            
+            <p className='  w-[230px] shadow-[0_0_10px_black] rounded-[15px] mt-2 mb-2 mr-2 ml-2 p-2 text-center text-[25px] tracking-[2px]'>
+                Your GPA = {GetGpa.toFixed(2)}</p>
+            <p className='  w-[230px] shadow-[0_0_10px_black] rounded-[15px] mt-2 mb-2 mr-1 ml-1 p-4 text-center text-[20px] tracking-[2px]'>
+                Your CGPA = {Getcgpa.toFixed(2)}</p>
+            </div>
+            </div>
+
+            <div className='flex text-center justify-center items-center '>
+             <div className='text-center mt-10 bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] shadow-[0_0_20px_black] rounded-[20px] p-4 mt-15 mb-12 m-5 '>
                 <button onClick={Calculate} 
-                className='bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] text-center text-[30px] mr-20 mb-10 hover:border-white border-1 border-cyan-400 rounded-[10px] cursor-pointer p-5 w-[300px]'> 
+                className='bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] text-center text-[25px] mr-2 mb-10 hover:border-white border-2 ml-2 mt-5 border-cyan-400 rounded-[10px] cursor-pointer p-4 w-[210px] shadow-[0_0_20px_black] hover:scale-[1.1] transition-transform duration-400'> 
                 Calculate
                 </button>
             
                 <button onClick={Reaset}    
-                className='bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] text-center text-[30px] cursor-pointer hover:border-white p-5 border-1 border-cyan-400 rounded-[10px] w-[300px]'>
+                className='bg-[linear-gradient(170deg,rgb(7,20,65)_35%,rgb(7,25,92)_50%)] text-center text-[25px] mr-2 mb-10 hover:border-white border-2 ml-2 mt-5 border-cyan-400 rounded-[10px] cursor-pointer p-4 w-[210px] shadow-[0_0_20px_black] hover:scale-[1.1] transition-transform duration-400'>
                 Reseat
                 </button> 
             </div>   
+            </div>
 
         </div>
-
     </div>  
   
     </>
