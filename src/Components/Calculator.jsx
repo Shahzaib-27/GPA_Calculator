@@ -4,11 +4,11 @@ export default function Calculator() {
 
 // value1 are connected to credit hours div  
 const [ value1 , setvalue1 ] = useState(4);
-const [ value2 , setvalue2 ] = useState(4);
+const [ value2 , setvalue2 ] = useState(3);
 const [ value3 , setvalue3 ] = useState(3);
-const [ value4 , setvalue4 ] = useState(3);
+const [ value4 , setvalue4 ] = useState(2);
 const [ value5 , setvalue5 ] = useState(2);
-const [ value6 , setvalue6 ] = useState(1);
+const [ value6 , setvalue6 ] = useState(2);
 
 // Values are connected to Grades Points
 const [ GradesPointsvalue1 , GradesPointssetvalue1 ] = useState(4);
